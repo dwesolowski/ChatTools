@@ -1,0 +1,26 @@
+# General Messages
+Messages:
+  # --- Player - Color codes may be used --- #
+  ClearPlayerChat: '&7The chat has been cleared!'
+  MutePlayerChatEnabled: '&7The chat has been muted!'
+  MutePlayerChatDisabled: '&7The chat has been unmuted!'
+#
+  # --- Global - Color codes and %player% may be used --- #
+  ClearGlobalChat: '&e%player% &7has cleared the chat!'
+  MuteGlobalChatEnabled: '&e%player% &7has muted the chat!'
+  MuteGlobalChatDisabled: '&e%player% &7has unmuted the chat!'
+#
+  # --- Error - Color codes may be used --- #
+  ChatMuted: '&eSorry, but the chat is currently muted.'
+  NoPermissions: '&eYou do not have permission to execute this command!'
+#
+  # Blacklist Messages - Color codes and %word% may be used --- #
+  AddedWord: 'Added new word &e%word%'
+  RemovedWord: 'Removed word &e%word%'
+  WordNotFound: '%word% &eNot Found!'
+  BlacklistMessage: '&eYour message contains Blacklisted words!'
+#
+# Blacklist Words
+Blacklist:
+- filteredWord1
+- filteredWord2

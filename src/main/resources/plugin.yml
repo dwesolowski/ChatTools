@@ -1,0 +1,69 @@
+name: ${name}
+version: ${version}
+description: ${description}
+author: ${author}
+website: ${url}
+
+main: ${mainClass}
+
+commands:
+  chattools:
+    usage: |
+      /<command> list : List blacklisted words.
+      /<command> add <word> : Add new blacklisted word.
+      /<command> remove <word> : Remove blacklisted word.
+    description: "Administer commands."
+    permission: chattools.admin
+  clearplayerchat:
+    usage: /<command>
+    description: "Clear chat for the current player."
+    permission: chattools.clearplayerchat
+  muteplayerchat:
+    usage: /<command>
+    description: "Mute chat for the current player."
+    permission: chattools.muteplayerchat
+  clearglobalchat:
+    usage: /<command>
+    description: "Clear the chat for all players on the server."
+    permission: chattools.clearglobalchat
+  muteglobalchat:
+    usage: /<command>
+    description: "Mute the chat for all players on the server."
+    permission: chattools.muteglobalchat
+  reloadchattools:
+    usage: /<command>
+    description: "Reloads the configuration file."
+    permission: chattools.reloadchattools
+
+permissions:
+  chattools.*:
+    description: "Gives access to all chattools commands."
+    children:
+      chattools.admin: true
+      chattools.clearplayerchat: true
+      chattools.muteplayerchat: true
+      chattools.clearglobalchat: true
+      chattools.muteglobalchat: true
+      chattools.reloadchattools: true
+      chattools.bypass: true
+  chattools.admin:
+    description: "Administer commands."
+    default: op
+  chattools.clearplayerchat:
+    description: "Clear chat for the current player."
+    default: false
+  chattools.muteplayerchat:
+    description: "Mute chat for the current player."
+    default: false
+  chattools.clearglobalchat:
+    description: "Clear the chat for all players on the server."
+    default: false
+  chattools.muteglobalchat:
+    description: "Mute the chat for all players on the server."
+    default: false
+  chattools.reloadchattools:
+    description: "Reloads the configuration file."
+    default: op
+  chattools.bypass:
+    description: "Allows players to chat when the server is muted."
+    default: op
