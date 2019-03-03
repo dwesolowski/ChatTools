@@ -1,8 +1,10 @@
 # ChatTools - Plugin for Bukkit | Spigot
 
+[![Software License](http://img.shields.io/badge/License-MIT-brightgreen.svg?style=flat-square)](LICENSE)
+
 A simple plugin to clear, mute and filter your chat messages.
 
-#### Supported Versions: 1.11+
+#### Supported Versions: 1.13+
 
 ## Commands:
 - /chattools list : List blacklisted words.

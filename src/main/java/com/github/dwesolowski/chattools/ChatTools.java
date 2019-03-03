@@ -24,6 +24,7 @@ public class ChatTools extends JavaPlugin {
         registerCommands();
         registerListeners();
         resetBooleans();
+        registerMetrics();
     }
 
     @Override
@@ -48,5 +49,9 @@ public class ChatTools extends JavaPlugin {
 
     private void resetBooleans() {
         MuteGlobalChat.toggle = false;
+    }
+
+    private void registerMetrics() {
+        final MetricsLite metrics = new MetricsLite(this);
     }
 }

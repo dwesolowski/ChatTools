@@ -1,10 +1,7 @@
-name: ${name}
+name: ChatTools
 version: ${version}
-description: ${description}
-author: ${author}
-website: ${url}
-
-main: ${mainClass}
+main: com.github.dwesolowski.chattools.ChatTools
+api-version: 1.13
 
 commands:
   chattools:
